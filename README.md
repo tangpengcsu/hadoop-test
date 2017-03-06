@@ -12,7 +12,7 @@
    - [RegxAcceptPathFilter](src/main/java/com\/szkingdom/RegxAcceptPathFilter.java)：上传文件类型过滤。
 2\. pom 文件
 
-    - ![pom.xml](pom.xml)
+    - [pom.xml](pom.xml)
 
 3\. mvm 打包工程
 
