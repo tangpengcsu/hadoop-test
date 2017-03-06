@@ -48,4 +48,10 @@ jar 参数配置：
 
 3\. 查看
 
+```bash
+$ hdfs dfds -ls /hadoopFile
+```
+
+或
+
 [http://192.168.1.197:50070](http://192.168.1.197:50070) --> Utilities --> Browse the file System
