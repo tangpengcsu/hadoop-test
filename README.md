@@ -2,7 +2,7 @@
 
 ## 目的
 
-- 批量上传 `/root` 下所有 `txt` 文件到 HDFS 的 `hadoopFile` 目录下。
+- 批量上传 `/root` 下所有 `txt` 类型文件到 HDFS 的 `hadoopFile` 目录下。
 
 ## 准备
 
@@ -36,8 +36,15 @@ $ sbin/start-dfs.sh
 2\. 运行程序
 
 ```bash
-$ hadoop jar ~/hadoop-test-1.0-SNAPSHOT-jar-with-dependencies.jar 
+$ hadoop jar ~/hadoop-test-1.0-SNAPSHOT-jar-with-dependencies.jar /home/server1 hadoopFile txt
 ```
+
+jar 参数配置：
+
+- 第一个参数: 待上传文件目录；必填
+- 第二个参数: HDFS 目标文件目录，如目录不存在会自动创建；必填
+- 第三个参数: 待上传文件类型；必填
+- 第四个参数: hdfs 地址，如：hdfs://192.168.1.197:9000/；可填
 
 3\. 查看
 
