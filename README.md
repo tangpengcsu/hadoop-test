@@ -8,12 +8,12 @@
 
 1\. 工程文件：
 
-   - [MultipleFileUpload](src/main/java/com\/szkingdom/MultipleFileUpload.java)：程序主入口。
-   - [RegxAcceptPathFilter](src/main/java/com\/szkingdom/RegxAcceptPathFilter.java)：上传文件类型过滤。
+- [MultipleFileUpload](src/main/java/com\/szkingdom/MultipleFileUpload.java)：程序主入口。
+- [RegxAcceptPathFilter](src/main/java/com\/szkingdom/RegxAcceptPathFilter.java)：上传文件类型过滤。
    
 2\. pom 文件
 
-    - [pom.xml](pom.xml)
+- [pom.xml](pom.xml)
 
 3\. mvm 打包工程
 
