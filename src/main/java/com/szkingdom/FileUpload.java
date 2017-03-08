@@ -60,11 +60,11 @@ public class FileUpload {
             ExecutorService threadPool = Executors.newCachedThreadPool();
             //遍历所有文件路径
             for (final Path p : listPath) {
-                System.out.println("正在上传：" + p.getName());
+                System.out.println("准备上传：" + p.getName());
                 //上传至 HDFS
 //                fs.copyFromLocalFile(p, outPath);
                 threadPool.execute(new UploadThread(fs, p, outPath));
-               // new Thread(new UploadThread(fs, p, outPath)).start();
+                // new Thread(new UploadThread(fs, p, outPath)).start();
 
             }
             threadPool.shutdown();

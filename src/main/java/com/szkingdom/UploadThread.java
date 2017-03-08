@@ -26,7 +26,7 @@ public class UploadThread implements Runnable {
     public void run() {
         try {
             Thread.sleep(500);
-            System.out.println("正在运行线程："+Thread.currentThread().getName());
+            System.out.println("正在上传："+srcPath.getName());
             long start=System.currentTimeMillis();
             fs.copyFromLocalFile(srcPath, outPath);
             long end =System.currentTimeMillis();
