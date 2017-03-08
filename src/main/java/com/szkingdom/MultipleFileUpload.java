@@ -27,7 +27,7 @@ public class MultipleFileUpload {
     private static Logger logger = Logger.getLogger(MultipleFileUpload.class);
 
     /*
-    * 格式：hadoop jar ~/hadoop-test-1.0-SNAPSHOT-jar-with-dependencies.jar /home/server1 hadoopFile/ tgz
+    * 格式：hadoop jar /home/hadoop/sparkdata/hadoop-test-1.0-SNAPSHOT-jar-with-dependencies.jar /home/hadoop/sparkdata/ test3 txt hdfs://192.168.200.30:9000/
     * java -jar hadoop-test-1.0-SNAPSHOT-jar-with-dependencies.jar D:\\SparkData\\ test2 txt hdfs://192.168.200.30:9000/
     * java -jar hadoop-test-1.0-SNAPSHOT-jar-with-dependencies.jar D:\\workspace\\IdeaProjects\\hadoop-test\\ test2 txt hdfs://192.168.200.30:9000/
     * args[0]: 待上传文件目录，必填
